@@ -1,0 +1,26 @@
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(.5rem, 2vw, 4rem);
+    max-width: clamp(1000px, 85vw, 1800px);
+    margin: 0 auto;
+    padding: clamp(1rem, 2vw, 2rem);
+    
+}
+
+/* img {
+  width: 80%;
+  height: clamp(200px, 20vw, 400px);
+  object-fit: contain;
+  margin: 0 auto;
+} */
+
+
+.shopContainer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.shopContainer h1 {
+  margin-bottom: 2rem;
+}

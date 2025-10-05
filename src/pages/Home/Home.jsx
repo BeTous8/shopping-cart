@@ -4,7 +4,7 @@ const Home = () => {
 
     return (
         <>
-            <h1>Welcome to our shop</h1>
+            <h1>Welcome to ModernShop</h1>
         </>
     )
 };
