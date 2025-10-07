@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50rem;
+    margin-top: 20px;
+    height: 30px;
+    
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.logo h3 {
+    color: rgb(55, 126, 192);
+}
+
+
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+hr {
+  border: none; /* Remove default border */
+  height: .5px; /* Set height for the line */
+  background-color: #dbd9d9; /* Set color */
+  margin: 20px 0; /* Add top and bottom margin */
+}
