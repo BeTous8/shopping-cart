@@ -28,8 +28,34 @@
     list-style-type: none;
 }
 
+.headingCart {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
 
+.cartIconWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    
+}
 
 
 
