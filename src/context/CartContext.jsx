@@ -23,15 +23,20 @@ export const CartProvider = ({children}) => {
     }
 
     const removeFromCart = (productId) => {
-
-
+        setCart(cart.filter(item => item.id !== productId));
     }
 
     const updateQuantity = (productId, newQuantity) => {
-
-    }
+        setCart(cart.map(item => 
+            item.id === productId
+            ? {...item, quantity: newQuantity}
+            : item 
+        ))
+    }      
+    
 
     const clearCart = () => {
+        setCart([]);
 
     }
 

@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: clamp(.5rem, 2vw, 4rem);
-    max-width: clamp(1000px, 85vw, 1800px);
+    row-gap: 4vw;
+    max-width: clamp(1000px, 80vw, 1800px);
     margin: 0 auto;
     padding: clamp(1rem, 2vw, 2rem);
     

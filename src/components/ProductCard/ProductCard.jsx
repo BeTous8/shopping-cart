@@ -37,10 +37,7 @@ const ProductCard = ({data}) => {
                     <p>Quantity</p>
                 </div>
                 <div className={style.quantityControl}>
-                    <button 
-                    onClick={decrement}
-                    disabled={quantity === 1}
-                    >-</button>
+                    <button onClick={decrement} disabled={quantity === 1}>-</button>
                     <input type='number' value={quantity} onChange={handleChange}></input>
                     <button onClick={increment}>+</button>
                 </div>
