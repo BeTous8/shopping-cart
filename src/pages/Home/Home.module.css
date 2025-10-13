@@ -5,7 +5,7 @@
     gap: 1.5rem;
     padding: 4rem 1rem;
     background: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(250 84% 64%) 100%);
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
     
 }
 
@@ -52,7 +52,7 @@
 .featuresContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: clamp(1000px, 80vw, 1800px);
+    /* max-width: clamp(1000px, 80vw, 1800px); */
     gap: clamp(.5rem, 2vw, 4rem);
     column-gap: 2rem;
     padding: 2rem;
@@ -93,6 +93,7 @@
     align-items: center;
     gap: 1.5rem;
     padding: 2rem 1rem;
+    text-align: center;
     
     
 }
@@ -116,6 +117,47 @@
     font-size: 1.1rem;
     display: flex;
     gap: 15px;
+}
+
+@media screen and (max-width:640px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10rem;
+        
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+        color: white;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .features h1 {
+        text-align: center;
+    }
+
+    .featuresContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .invite h1,
+    .features h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .features h1 {
+        margin: 1.2rem 0rem;
+    }
+    
 }
 
 

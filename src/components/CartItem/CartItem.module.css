@@ -69,3 +69,20 @@
     font-size: 1rem;
     
 }
+
+@media screen and (max-width: 640px) {
+    .cartItem {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .itemControl {
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+    
+}

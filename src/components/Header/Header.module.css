@@ -6,10 +6,7 @@
     top: 0;
     background-color: white;  /* Important: needs background */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    padding: 1.5rem;
-    
-    
-    
+    padding: 1.5rem; 
 
 }
 
@@ -79,4 +76,13 @@ hr {
   height: .5px; /* Set height for the line */
   background-color: #dbd9d9; /* Set color */
   margin: 20px 0; /* Add top and bottom margin */
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        display: grid;
+        row-gap: 1rem;
+
+}
+    
 }

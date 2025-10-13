@@ -1,7 +1,8 @@
 .productGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: clamp(.5rem, 2vw, 4rem);
+    /* gap: clamp(.5rem, 2vw, 4rem); */
+    column-gap: 3rem;
     row-gap: 4vw;
     max-width: clamp(1000px, 80vw, 1800px);
     margin: 0 auto;
@@ -24,4 +25,22 @@
 
 .shopContainer h1 {
   margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .productGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0rem;
+  }
 }
