@@ -39,6 +39,23 @@
     color: hsl(220 8.9% 46.1%);
 }
 
+.navBar ul li,
+.cartIcon {
+    transition: .1s ease-in;
+
+}
+
+    
+
+
+.navBar ul li:hover,
+.cartIcon:hover {
+    color: rgb(54, 190, 0);
+    font-weight: 700;
+}
+
+
+
 .headingCart {
     display: flex;
     gap: 6px;
@@ -47,8 +64,13 @@
 
 .cartIconWrapper {
     display: flex;
-    align-items: center;
+    align-self: center;
     position: relative;
+}
+
+.cartIconWrapper .cartIcon{
+    display: flex;
+    color: "#393a3aff"
 }
 
 .counter {

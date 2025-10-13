@@ -33,11 +33,12 @@ const Header = () => {
                         <li><Link to={'/shop'}>Shop</Link></li>
                         <li className={styles.headingCart}>
                             <div className={styles.cartIconWrapper}>
-                                <ShoppingCart size={22} color="#393a3aff" />
-                                {sum > 0 && <div className={styles.counter}>{sum}</div>}    
+                                <Link className={styles.cartIcon}to={'/cart'}>
+                                    <ShoppingCart size={22} />
+                                    {sum > 0 && <div className={styles.counter}>{sum}</div>}
+                                </Link>
+                                Cart
                             </div>
-                            <Link to={'/cart'}>Cart</Link>
-                            
                         </li>
                     </ul>
                 </div>
