@@ -19,8 +19,13 @@ const Header = () => {
         <>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <Store size={32} color="#4692daff" />
-                    <h3>ModernShop</h3>
+                    <button >
+                        <Link className={styles.logoContainer} to={'/'}>
+                            <Store size={30} color="#4692daff" />
+                            <h2>ModernShop</h2>
+                        </Link> 
+                    </button>
+                    
                 </div>
                 <div className={styles.navBar}>
                     <ul>
@@ -38,7 +43,7 @@ const Header = () => {
                 </div>
                 
             </div>
-            <hr></hr>
+            
         </>
         
     )

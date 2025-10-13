@@ -2,22 +2,35 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 50rem;
-    margin-top: 20px;
-    height: 30px;
+    position: sticky;
+    top: 0;
+    background-color: white;  /* Important: needs background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    padding: 1.5rem;
+    
+    
     
 
 }
 
-.logo {
+
+.logo button {
+    
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logo button .logoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
 }
 
-.logo h3 {
+.logo h2 {
     color: rgb(55, 126, 192);
+    font-weight: 700;
 }
 
 
@@ -26,6 +39,7 @@
     justify-content: center;
     gap: 1.2rem;
     list-style-type: none;
+    color: hsl(220 8.9% 46.1%);
 }
 
 .headingCart {

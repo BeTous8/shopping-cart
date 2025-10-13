@@ -1,0 +1,124 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(250 84% 64%) 100%);
+    outline: 1px red solid;
+    
+}
+
+.hero h1 {
+    font-size: 3.7rem;
+    color: white;
+}
+.hero p {
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    opacity: .9;
+}
+
+.hero button{
+    padding: .8rem 3rem;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid rgb(224, 223, 223);
+    background-color: white;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(21 90% 48%);
+    font-size: 1.2rem;
+}
+
+.hero button:hover {
+    background-color: hsl(21, 88%, 44%);
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: hsla(223, 5%, 70%, 0.3); */
+    background-color: hsl(220deg 14% 96% / 30%);
+    padding: 3rem;
+    gap: 2rem;
+
+}
+
+.featuresContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: clamp(1000px, 80vw, 1800px);
+    gap: clamp(.5rem, 2vw, 4rem);
+    column-gap: 2rem;
+    padding: 2rem;
+}
+
+.featuresContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 5px;
+    
+    
+}
+
+.featuresContainer div p {
+    text-align: center;
+    color: hsl(220 8.9% 46.1%)
+}
+
+.truck,
+.shield,
+.headphones {
+    color: hsl(217 91% 60%);
+    border-color: hsl(220 13% 91%);
+    background-color: hsl(217, 87%, 91%);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    
+    
+}
+
+.invite p {
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: hsl(220 8.9% 46.1%);
+    opacity: .9;
+}
+.invite button{
+    padding: .8rem 2.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid rgb(224, 223, 223);
+    background-color: white;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(217 91% 60%);
+    font-size: 1.1rem;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+
