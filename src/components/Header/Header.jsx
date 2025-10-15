@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Store, ShoppingCart } from "lucide-react";
 import styles from "./Header.module.css";
 import { CartContext } from "../../context/CartContext";
@@ -29,15 +29,26 @@ const Header = () => {
                 </div>
                 <div className={styles.navBar}>
                     <ul>
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/shop'}>Shop</Link></li>
+                        <li><NavLink to={'/'}
+                        className={({isActive}) => isActive ? styles.activeLink : ''}>
+                            Home
+                            </NavLink>
+                        </li>
+                        <li><NavLink to={'/shop'}
+                        className={({ isActive }) => isActive ? styles.activeLink : ''}>
+                            Shop
+                            </NavLink>
+                        </li>
                         <li className={styles.headingCart}>
                             <div className={styles.cartIconWrapper}>
-                                <Link className={styles.cartIcon}to={'/cart'}>
+                                <NavLink 
+                                    to={'/cart'}
+                                    className={({isActive}) => isActive ? `${styles.cartIcon} ${styles.activeLink}` : styles.cartIcon}
+                                >
                                     <ShoppingCart size={22} />
                                     {sum > 0 && <div className={styles.counter}>{sum}</div>}
-                                </Link>
-                                Cart
+                                    Cart
+                                </NavLink>
                             </div>
                         </li>
                     </ul>

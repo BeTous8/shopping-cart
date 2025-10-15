@@ -55,6 +55,10 @@
 }
 
 
+.activeLink {
+    color: #22c55e !important;
+    font-weight: 700 !important;
+}
 
 .headingCart {
     display: flex;
